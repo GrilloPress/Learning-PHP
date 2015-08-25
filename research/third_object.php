@@ -7,7 +7,7 @@
 
 class Vehicle {
   
-  $license = "";
+  public $license = "";
   
   public function horn(){
     
@@ -15,7 +15,13 @@ class Vehicle {
     
   }
   
-  public function registration($license){
+  public function set_registration($new_license){
+    
+    $this->license = $new_license;
+    
+  }
+  
+  public function read_registration(){
     
     return $this->license;
     
@@ -24,3 +30,10 @@ class Vehicle {
   public $maker = "Andrew";
   
 }
+
+$redBus = new Vehicle;
+
+echo $redBus->horn();
+echo $redBus->maker;
+$redBus->set_registration("012834903");
+echo $redBus->read_registration();
