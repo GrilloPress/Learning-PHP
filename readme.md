@@ -12,3 +12,16 @@ So, learning to create functions is both about learning how to create functions 
 This dual passive learning and active use of a concept is the best teaching method. Think of it like a mixture of "Learn x the Hard Way" and "Get Shit Done" combined.
 
 This book may never get completed. That is highly likely. But, enjoy anyway.
+
+# Design
+
+Website = yellow, white and black with grey
+
+```sass
+$yellow: #FAC969;
+$black: #000;
+$white: #fff;
+$grey: #efefef;
+```
+
+Bold black, uppercase headings

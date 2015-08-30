@@ -14,27 +14,42 @@ reduce replication, but also means that any code in one project is easier to rep
 > which function as a toolkit of solutions you can carry around with you. If this is a lot to take in, don't worry. 
 > You can deal with this stuff later on in your career as you get more confident. It will happen. Keep on trucking.
 
-PHP hasn't always had the feature-set to be truely OOP like Java or Ruby but has grown to better fit the OOP development concept.
+An object in OOP is just that. An object. A vase, a person, a truck etc. Not the concept or blueprint followed to create a vase (the vase-i-ness, or qualities that make something a vase)
+but the actual vase itself. An instance of a vase.
 
-An object in OOP is just that. An object with features that track to what we have ourselves defined as the defining features of said object.
+Actual Object | Concept/blueprint
+------------- | -------------
+Red Vase 1 from 1991    | Vase
+Red Vase 2 from 1992  | Vase
+
+So, we have the vase concept/blueprint. Our list of things that make something a vase, and the actual physical thing, which is the vase object.
+
+In OOP we don't deal with physical vases, but we do build both the concept/blueprints that make something a vase, and then "virtual" instances of our vases.
 
 Confusing? It is a touch isn't it.
 
-It is probably worth going through an example.
+It is probably worth going through another example.
 
 Let's say we have a blueprint of a person. We could set some defining features like "brain", "name", "skin", "feelings", "mouth", "friends", "parents" etc.
 
 If we created several instances of our blueprints we would have several people. Each person, at least in terms of our application, is an object.
 
-So Person1, Person2 etc. all relating to our master blueprint of a person.
+So Person1, Person2 etc. all relating to our master blueprint of a person is an object.
 
 This effectively is all OOP is. A blueprint of a thing, and the instances of that blueprint - which are the objects.
 
-I have been using the term "blueprints". But in OOP we call those blueprints of models, classes.
+I have been using the term "blueprints". But in OOP we call those blueprints of things we create, classes.
+
+> It make be more accurate to say, classes are the way we create those blueprints
 
 So we have a Person Class which defined the features each person we create has. And a bunch of people, which are our objects.
 
-> ####Things to remember
+Actual Object | Concept/blueprint
+------------- | -------------
+Spiderman     | Person
+Aunt May      | Person
+
+> #### Things to remember
 > Classes are our master blueprints
 > Objects are the instances of the Classes
 > We may have one Person class, millions of people
@@ -77,6 +92,8 @@ class Person {
 
 Here we have created a variable inside our class but we had a keyword before it ```public``` which lets us access the variable outside the class.
 
+> There are of course other options to public, like protected and private. We'll get to those soon
+
 How do we access the variables that we have made public?
 
 Assuming we create an instance of the class like so:
@@ -111,3 +128,5 @@ echo $andrew->ego;
 So what was that ```->``` arrow doing?
 
 In PHP that accesses the value that belongs to the object you are calling. So, the schema is: ```$className->valueInside;```
+
+
